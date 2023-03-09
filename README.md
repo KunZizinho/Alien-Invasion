@@ -29,3 +29,16 @@
     this function was called.
     For example , when player clicks  the game window's close button, a pygame.QUIT event is detected and we call sys.exit() to exit the game.
     To call to pygame.display.flip() tells pygame to most recent drawn screen visible. In this case draws an empty screen on each pass through the while loop, erasing the old screen so only the new screen is visible.
+
+# Adding settings.py module and Class Settings
+    Instead  of adding all of our settings throughout the code, we created a settings module with class Settings to store all these values in one place.
+    This approach allows us to work wit only one settings object any time we need to access an individual setting.
+    This also makesit easier to modify game's apperance and behavior as our project grow.
+
+# Adding ship moddule 
+    First we are gonna add images folder to our directory, and upload our artwork.
+    We are gonna use pygame blit() method to draw the image of the ship.
+    We are gonna use bmp. files bc pygame loads bmp. files by default.
+    Then we are gonna create ship.py module with class Ship that's gonna manage most of ships behavior.
+    
+    
